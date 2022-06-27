@@ -22,11 +22,11 @@
 
             </header>
             <nav>
-                <h1><table cellpadding="4px" align="center">
+                <h1><table cellpadding="6px" align="center">
                     <tr> 
-                        <td> <a href='#'>главная</a></td>
-                        <td><a href="#">калькулятор</a>  </td>
-                        <td><a href='#'>рандомайзер</a></td>
+                        <td> <a href='#' id="main_page_btn">главная</a></td>
+                        <td><a href="#" id="calc_page_btn">калькулятор</a>  </td>
+                        <td><a href='#' id="rand_page_btn">рандомайзер</a></td>
                         <td><a href='#'>укоротитель ссылок</a></td>
                         <td><a target="_blank" href='http://kamilsultanov.tilda.ws/'>мое резюме</a></td>
                         <td><a href='#'>форум</a></td>
@@ -77,6 +77,22 @@
                          Планы гранди озные и будут сто раз переосмысливаться, результат покажет время.</p> 
 
                     <p align="center">Спасибо за внимание!</p>
+                </section>
+            </article >
+            <article id='rand_page' align="center">
+                <section>
+                    <p>
+                        <h3>Рандомайзер</h3>
+                    </p>
+                    <p>
+                        <label for="rand_value" > Максимальное число: </label>
+                    <br/>        
+                        <input id='rand_value' type="number">
+                    </p>
+                    <p>
+                        <button id="btn">Мне повезет</button>
+                    </p>
+                    <h3 align="center"><div id="pool_text">Выпало:</div></h3>
                 </section>
             </article>
             <aside>
