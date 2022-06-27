@@ -11,7 +11,9 @@ a{
     color: rgb(138, 52, 17);
 }
 nav {
+    border: 5px outset rgb(226, 185, 185);
     height: 9%;
+    min-width: 400px;
     text-transform: uppercase;
     text-shadow: 1px 3px 4px gray;
     text-align: center;
@@ -23,9 +25,10 @@ nav {
     left: 8%; /*Позицианирование слева*/
     right: 11%;
     background: rgb(243, 219, 184); 
-    padding: 0.0000001%;/*Размер фона*/
+    padding: 0.000000001%;/*Размер фона*/
     padding-left: 10%;
     padding-right: 10%;
+    
     }
 form{ font-size: small;
     position: absolute; 
@@ -54,12 +57,14 @@ form{ font-size: small;
 p{
     text-indent: 1cm;
     }
-article { font-size: 1.3vw;
+article { 
+   
+    font-size: 1.3vw;
     position: absolute; 
     top: 20%;
     background-color: Cornsilk; 
     padding: 3%;
-    padding-top: 1%;
+    padding-top: 1.5%;
     padding-bottom: 1%;
     }
 footer{ font-size: 1vw;
