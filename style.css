@@ -1,0 +1,70 @@
+body { 
+    overflow:auto;
+    background: url(https://s1.eshoper.ru/00/9c51fdc3576994c419464b8882a56ddf.jpg); 
+    font-family: arila, sans-serif ;/*Шрифт*/ font-size: 1.5em;/*Размер шрифта*/
+    color: rgb(58, 2, 2);/*Цвет текста*/
+    }
+header{
+    background-color: Cornsilk;
+    }
+a{
+    color: rgb(138, 52, 17);
+}
+nav {
+    height: 9%;
+    text-transform: uppercase;
+    text-shadow: 1px 3px 4px gray;
+    text-align: center;
+    font-size: 0.85vw;
+    font-weight: bold;/*Толщина шрифта*/
+    font-variant: small-caps; /* Тут маленькие заглавные буквы*/
+    position: absolute; 
+    top: 10%; /*Позиционтрование сверху*/
+    left: 8%; /*Позицианирование слева*/
+    right: 11%;
+    background: rgb(243, 219, 184); 
+    padding: 0.0000001%;/*Размер фона*/
+    padding-left: 10%;
+    padding-right: 10%;
+    }
+form{ font-size: small;
+    position: absolute; 
+    right: 1%;
+    top: 10px;
+    }
+#search {position: absolute; 
+    left: 1%;
+    }
+.top{
+    text-align: center;
+    text-transform: uppercase;
+    }  
+#main_page{
+    width: 64%;
+    position: absolute;
+    left: 13%;
+    right: 13%;
+    text-align:justify;/*Выравнивание*/
+    
+    }
+#calc_page{
+    left: 40%;
+    display: none; /*Блок скрыт*/
+    }
+p{
+    text-indent: 1cm;
+    }
+article { font-size: 1.3vw;
+    position: absolute; 
+    top: 20%;
+    background-color: Cornsilk; 
+    padding: 3%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    }
+footer{ font-size: 1vw;
+    position: absolute;
+    top: 850px;
+    left: 40%;
+    right: 40%;
+    }
