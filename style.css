@@ -63,7 +63,7 @@ input{
     font-size:x-large;
     color: rgb(90, 34, 12);
     font-weight: bold;
-    background-color:  rgb(255, 251, 245);
+    background-color: rgb(253, 247, 244);
     border-style:solid;
     border-radius: 25px;
     border-color: rgb(173, 81, 45);
@@ -88,6 +88,7 @@ form input{
 .loginform_btn{
     width: 160px;
     height: 30px;
+    background-color:  rgb(243, 219, 184);
     }
 #search_btn{
     left:-200px;

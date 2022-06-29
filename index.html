@@ -12,7 +12,7 @@
                 <form id="loginform" action="#" method="post">
                     <input class="loginform_input" type="email" placeholder="Почта"/><br/>
                     <input class="loginform_input" type="password" placeholder="Пароль" required/><br/>
-                    <input class="loginform_btn" id="enter" type="submit" value="Авторизоваться" "/><br/>
+                    <input class="loginform_btn" id="enter" type="submit" value="Авторизоваться" onclick="alert('Этот раздел еще не работает')"><br/>
                     <input class="loginform_radio" type="radio" name="my_pc"/>Не мой компьютер
                 </form>
                 <form target="_blank" id='search' action="https://www.google.com/search" method="put">
@@ -73,7 +73,14 @@
                         инструментами создания сайтов, приложений,<br/> управления версиями и так далее. 
                         Все делается и доробатывается исключительно на бум, и вид сайта <br/>будет звисить
                          от настроения автора.</p> 
-                    <p>Сейчас реализовано: <ul> <li>Калькулятор</li><li>Рандомайзер</li><li>Укоротитель ссылок (Пока реализован только лист без функционала)</li> </ul> остальные функции будут добавляться по мере <br/>готовности.
+                    <p>Сейчас реализовано: 
+                        <ul> 
+                            <li>Калькулятор</li>
+                            <li>Рандомайзер</li>
+                            <li>Поиск в гугл</li>
+                        </ul>
+                        Укоротитель ссылок и авторизащия пока реализованы только графически,
+                         без функционала. Остальные функции будут добавляться по мере <br/>готовности.
                          Планы гранди озные и будут сто раз переосмысливаться, результат покажет время.</p> 
 
                     <p align="center">Спасибо за внимание!</p>
@@ -116,7 +123,7 @@
                         <input class="input" id='short_link_value' type="link" placeholder="https://www.short.com/link">
                     </p>
                     <p>
-                        <button class="btn" id="link_btn">Получить короткую ссылку</button>
+                        <button class="btn" id="link_btn" onclick="alert('Этот раздел еще не работает')">Получить короткую ссылку</button>
                     </p>
                 </selection>
             </article>
