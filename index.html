@@ -1,7 +1,7 @@
 <!DOCTYPE html>
     <head>
         
-        <title>Калькулятор</title>
+        <title>Всякая всячина</title>
         <meta charset="utf-8"> <!--Да, он по умолчанию, но все равно указал-->
         <link rel="shortcut icon" href="https://thumbs.dreamstime.com/b/%D0%B7%D0%BD%D0%B0%D1%87%D0%BE%D0%BA-%D0%BA%D0%B0-%D1%8C%D0%BA%D1%83-%D1%8F%D1%82%D0%BE%D1%80%D0%B0-%D0%B2-%D0%BF-%D0%BE%D1%81%D0%BA%D0%BE%D0%BC-%D1%81%D1%82%D0%B8-%D0%B5-%D1%82%D0%B0%D0%BA%D0%B6%D0%B5-%D0%B2%D0%B5%D0%BA%D1%82%D0%BE%D1%80-%D0%B8-%D1%8E%D1%81%D1%82%D1%80%D0%B0%D1%86%D0%B8%D0%B8-%D0%BF%D1%80%D0%B8%D1%82%D1%8F%D0%B6%D0%BA%D0%B8-81008505.jpg">
         <!--стиль-->
@@ -27,14 +27,14 @@
                         <td> <a href='#' id="main_page_btn">главная</a></td>
                         <td><a href="#" id="calc_page_btn">калькулятор</a>  </td>
                         <td><a href='#' id="rand_page_btn">рандомайзер</a></td>
-                        <td><a href='#'>укоротитель ссылок</a></td>
+                        <td><a href='#'id='link_page_btn' onclick="alert('Этот раздел еще не работает')">укоротитель ссылок</a></td>
                         <td><a target="_blank" href='http://kamilsultanov.tilda.ws/'>мое резюме</a></td>
-                        <td><a href='#'>форум</a></td>
+                        <td><a href='#' onclick="alert('Этот раздел еще не работает')">форум</a></td>
                     </tr>
                 </table></h1>
                 
             </nav>
-            <article id="calc_page" align="center">
+            <article id="calc_page" align="center"><!--Калькулятор-->
                 <section>
                     <p>
                         <h3>Калькулятор</h3>
@@ -60,12 +60,12 @@
                         <input id='value_2' type="number"></input>
                     </p>
                     <p>
-                        <button id="btn">Вычислить</button>
+                        <button id="calc_btn">Вычислить</button>
                     </p>
-                    <h3 align="center"><div id="pool_text">Ответ:</div></h3>
+                    <h3 align="center"><div class="score" id="pool_calc">Ответ:</div></h3>
                 </section>
             </article> 
-            <article id="main_page">
+            <article id="main_page"><!--Main page-->
                 <section>
                     <h3 class="top">Для чего создан этот сайт?</h3>
                     <p>Этот сайт создается как площадка для отработки моих умений. Он не имеет 
@@ -73,27 +73,52 @@
                         инструментами создания сайтов, приложений,<br/> управления версиями и так далее. 
                         Все делается и доробатывается исключительно на бум, и вид сайта <br/>будет звисить
                          от настроения автора.</p> 
-                    <p>Сейчас реалищован только калькулятор, остальные функции будут добавляться по мере <br/>готовности.
+                    <p>Сейчас реализовано: <ul> <li>Калькулятор</li><li>Рандомайзер</li><li>Укоротитель ссылок (Пока реализован только лист без функционала)</li> </ul> остальные функции будут добавляться по мере <br/>готовности.
                          Планы гранди озные и будут сто раз переосмысливаться, результат покажет время.</p> 
 
                     <p align="center">Спасибо за внимание!</p>
                 </section>
             </article >
-            <article id='rand_page' align="center">
+            <article id='rand_page' align="center"><!--Randomaser page-->
                 <section>
                     <p>
                         <h3>Рандомайзер</h3>
                     </p>
                     <p>
-                        <label for="rand_value" > Максимальное число: </label>
+                        <label for="rand_value" > Минимальное число: </label>
                     <br/>        
-                        <input id='rand_value' type="number">
+                        <input id='rand_value_start' type="number" value="0" min="0" max="999999999">
                     </p>
                     <p>
-                        <button id="btn">Мне повезет</button>
+                        <label for="rand_value" > Максимальное число: </label>
+                    <br/>        
+                        <input id='rand_value_end' type="number" value="6" min="0" max="999999999">
                     </p>
-                    <h3 align="center"><div id="pool_text">Выпало:</div></h3>
+                    <p>
+                        <button id="rand_btn">Мне повезет</button>
+                    </p>
+                    <h3 align="center"><div class="score" id="pool_rand">Выпало:</div></h3>
                 </section>
+            </article>
+            <article align="center" id="link_page"><!-- Short Link maker  -->
+                <selection>
+                    <p>
+                        <h3>Укоротитель ссылок</h3>
+                    </p>
+                    <p>
+                        <label for="long_link_value" > Ваша ссылка: </label>
+                    <br/>        
+                        <input id='long_link_value' type="link" placeholder="https://www.website.com/long-link/so-long124352465">
+                    </p>
+                    <p>
+                        <label for="short_link_value" > Максимальное число: </label>
+                    <br/>        
+                        <input id='short_link_value' type="link" placeholder="https://www.short.com/link">
+                    </p>
+                    <p>
+                        <button id="link_btn">Получить короткую ссылку</button>
+                    </p>
+                </selection>
             </article>
             <aside>
                 <!--Второстепенный сопутствующий контент-->
@@ -102,6 +127,6 @@
                 <!--Подвал-->
                 <h3>All rights reserved 2022</h3>
             </footer>
-        <script src="C:\Users\Камиль\Documents\GitHub\test\script.js"> Скрипт не работает </script>
+        <script src="C:\Users\Камиль\Documents\GitHub\test\script.js"></script>
     </body>
-</html>
+</html>  
