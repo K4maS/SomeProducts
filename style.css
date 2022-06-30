@@ -1,6 +1,7 @@
 body { 
     overflow:auto;
-    background: url(https://s1.eshoper.ru/00/9c51fdc3576994c419464b8882a56ddf.jpg); 
+    background: 
+    url(https://phonoteka.org/uploads/posts/2021-04/1618458257_40-phonoteka_org-p-fon-dlya-lendinga-40.jpg); 
     background-attachment: fixed;
     font-family: arila, sans-serif ;/*Шрифт*/ font-size: 1.5em;/*Размер шрифта*/
     color: rgb(58, 2, 2);/*Цвет текста*/
@@ -12,25 +13,28 @@ a{
     color: rgb(138, 52, 17);
 }
 nav {
-    box-shadow: 3px 3px 5px 1px gray ;
+    box-shadow: 1px 3px 3px 1px gray ;
     border-radius: 50px;
-    border: 5px outset rgb(226, 185, 185);
+    border: none /*5px outset rgb(226, 185, 185)*/;
     height: 85px;
     width: 1150px;
     text-transform: uppercase;
-    text-shadow: 1px 3px 4px gray;
+    text-shadow: 1px 3px 3px gray;
     text-align: center;
     font-size: medium;
     font-weight: bold;/*Толщина шрифта*/
     font-variant: small-caps; /* Тут маленькие заглавные буквы*/
     position: absolute; 
-    top: 100px; /*Позиционтрование сверху*/
+    top: 150px; /*Позиционтрование сверху*/
     left: 170px; /*Позицианирование слева*/
     right: 170px; /*Позицианирование справа*/
-    background: rgb(243, 219, 184); 
-    padding: 0.000000001%;/*Размер фона*/
-    padding-left: 10%;
-    padding-right: 10%;
+    background: linear-gradient(
+                rgba(255, 240, 190, 0.452) 1%,
+                rgba(243, 219, 184, 0.603) 20%, 
+                rgba(247, 168, 50, 0.664), 
+                rgba(238, 168, 76, 0.856)) ; 
+    padding-left: 200px;
+    padding-right: 200px;
     z-index: 4;
     
     }
@@ -46,30 +50,34 @@ nav a:active {
     color: rgb(173, 81, 45);
     }
 article { 
-    box-shadow: 3px 3px 5px 1px gray;
+    box-shadow: 1px 3px 3px 0px gray;
     border-radius:0 0 50px 50px;
     width: 1200px;
     left: 280px;
     right: 300px;
     z-index: 3;
     position: absolute; 
-    top: 200px;
-    background-color: Cornsilk; 
-    padding: 1.5% 3% 1% 3%; /*Сверху, справа, снизу, слева*/
+    top: 240px;
+    background: linear-gradient(rgba(243, 231, 176, 0.589), 
+                                rgba(238, 214, 109, 0.589)); 
+    padding: 20px 60px 60px 60px; /*Сверху, справа, снизу, слева*/
     }
 input{
+    box-shadow: inset 1px 3px 3px gray;
     text-align: center;
     position:relative;
     font-size:x-large;
     color: rgb(90, 34, 12);
     font-weight: bold;
     background-color: rgb(253, 247, 244);
-    border-style:solid;
     border-radius: 25px;
     border-color: rgb(173, 81, 45);
     border-width: 2px;
     width: 500px;
     height: 50px;
+    }
+input:active{
+    border-color: rgb(233, 110, 62);
     }
 form input{
     width: 200px;
@@ -82,15 +90,33 @@ form input{
     height: 20px;
     }
 .loginform_radio{
+    box-shadow: none;
     width: 25px;
     left: -10px;
     }
 .loginform_btn{
+    box-shadow: none;
     width: 160px;
     height: 30px;
-    background-color:  rgb(243, 219, 184);
+    background: linear-gradient(
+        rgba(255, 240, 190, 0.452) 1%,
+        rgba(243, 219, 184, 0.603) 20%, 
+        rgba(247, 168, 50, 0.664), 
+        rgba(238, 168, 76, 0.856)) ; 
     }
+.loginform_btn:active{
+    background: linear-gradient(
+        360deg,
+        rgba(255, 240, 190, 0.452) 1%,
+        rgba(243, 219, 184, 0.603) 20%, 
+        rgba(247, 168, 50, 0.664), 
+        rgba(238, 168, 76, 0.856)); 
+    border-color: rgb(173, 81, 45);
+      
+}
+
 #search_btn{
+    box-shadow: none;
     left:-200px;
     top: 4px;
     font-size: xx-large;
@@ -107,25 +133,47 @@ form input{
     font-size:xx-large;
     color: rgb(90, 34, 12);
     font-weight: bold;
-    background-color:  rgb(243, 219, 184);
+    background: linear-gradient(
+        rgba(255, 240, 190, 0.452) 1%,
+        rgba(243, 219, 184, 0.603) 20%, 
+        rgba(247, 168, 50, 0.664), 
+        rgba(238, 168, 76, 0.856)) ; 
     border-radius: 25px;
-    border-color: rgb(173, 81, 45);
+    border-color:  rgb(173, 81, 45);
     border-width: 3px;
     width: 100px;
     height: 50px;
     }
+.select:active{background: linear-gradient(0deg,
+    rgba(255, 240, 190, 0.452) 1%,
+    rgba(243, 219, 184, 0.603) 20%, 
+    rgba(247, 168, 50, 0.664), 
+    rgba(238, 168, 76, 0.856)) ; }
 .btn{
     position: relative;
     left:-20px;
     font-size:large;
     color: rgb(90, 34, 12);
     font-weight: bold;
-    background-color:  rgb(243, 219, 184);
+    
     border-radius: 25px;
     border-color: rgb(173, 81, 45);
     border-width: 3px;
     width: 300px;
     height: 50px;
+    background: linear-gradient(
+        rgba(255, 240, 190, 0.452) 1%,
+        rgba(243, 219, 184, 0.603) 20%, 
+        rgba(247, 168, 50, 0.664), 
+        rgba(238, 168, 76, 0.856)) ; 
+    }
+.btn:active{
+        background: linear-gradient(
+        360deg,
+        rgba(255, 240, 190, 0.452) 1%,
+        rgba(243, 219, 184, 0.603) 20%, 
+        rgba(247, 168, 50, 0.664), 
+        rgba(238, 168, 76, 0.856)); 
     }
 form{ font-size: small;
     position: absolute; 
@@ -149,6 +197,7 @@ form{ font-size: small;
     }
 p{
     text-indent: 1cm;
+    word-wrap: break-word;
     }
 ul{
         text-indent: 1cm;
