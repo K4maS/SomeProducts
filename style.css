@@ -48,6 +48,9 @@ nav a:hover {
     }
 nav a:active {
     color: rgb(173, 81, 45);
+    position: relative;
+    top: 1px;
+    text-shadow: 0px 2px 2px gray;
     }
 article { 
     box-shadow: 1px 3px 3px 0px gray;
@@ -89,11 +92,6 @@ form input{
     width: 150px;
     height: 20px;
     }
-.loginform_radio{
-    box-shadow: none;
-    width: 25px;
-    left: -10px;
-    }
 .loginform_btn{
     box-shadow: none;
     width: 160px;
@@ -117,14 +115,19 @@ form input{
 
 #search_btn{
     box-shadow: none;
+    text-shadow: 1px 3px 3px gray;
     left:-200px;
     top: 4px;
-    font-size: xx-large;
+    font-size: 31px;
     background-color: transparent;/*Прозрачный фон для кнопки*/
     border: none;
     width: 40px;
-    height: 40px;
+    height: 50px;
     border-radius: 17.5px;
+    }
+#search_btn:active {
+    font-size: 29px;
+    text-shadow: 0px 2px 2px gray;
     }
 .select{
     text-align: center;
@@ -175,7 +178,9 @@ form input{
         rgba(247, 168, 50, 0.664), 
         rgba(238, 168, 76, 0.856)); 
     }
-form{ font-size: small;
+form{ 
+    
+    font-size: small;
     position: absolute; 
     left: 1720px;
     top: 10px;
