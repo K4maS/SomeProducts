@@ -15,27 +15,27 @@ a{
 }
 nav {
     box-shadow: 1px 3px 3px 1px gray ;
-    border-radius: 50px;
+    border-radius: 10vw;
     border: none /*5px outset rgb(226, 185, 185)*/;
-    height: 85px;
-    width: 1200px;
+    min-height: 85px;
+    min-width: 640px;
     text-transform: uppercase;
     text-shadow: 1px 3px 3px gray;
     text-align: center;
-    font-size: 108%;
+    font-size: calc(10px + 1vw);
     font-weight: bold;/*Толщина шрифта*/
     font-variant: small-caps; /* Тут маленькие заглавные буквы*/
     position: absolute; 
     top: 150px; /*Позиционтрование сверху*/
-    left: 140px; /*Позицианирование слева*/
-    right: 170px; /*Позицианирование справа*/
+    left: 10%; /*Позицианирование слева*/
+    right: 10%; /*Позицианирование справа*/
     background: linear-gradient(
                 rgba(255, 240, 190, 0.452) 1%,
                 rgba(243, 219, 184, 0.603) 20%, 
                 rgba(247, 168, 50, 0.664), 
                 rgba(238, 168, 76, 0.856)); 
-    padding-left: 200px;
-    padding-right: 200px;
+    padding-left: 100px;
+    padding-right: 100px;
     z-index: 4;
     
     }
@@ -56,11 +56,12 @@ nav a:active {
     text-shadow: 0px 2px 2px gray;
     }
 article { 
+    font-size: calc(10px + 1vw);
     box-shadow: 1px 3px 3px 0px gray;
     border-radius:0 0 50px 50px;
-    width: 1200px;
-    left: 280px;
-    right: 300px;
+    min-width: 600px;
+    left:17%;
+    right: 17%;
     z-index: 3;
     position: absolute; 
     top: 240px;
@@ -78,20 +79,23 @@ input{
     color: rgb(90, 34, 12);
     font-weight: bold;
     background-color: rgb(253, 247, 244);
-    border-radius: 25px;
+    border-radius: 5vw;
     border-color: rgb(173, 81, 45);
     border-width: 2px;
-    width: 500px;
-    height: 50px;
+    width: 20vw;
+    height: 2vw;
     }
 input:active{
     border-color: rgb(233, 110, 62);
     }
 form input{
-    width: 200px;
-    height: 40px;
+    width: 11vw;
+    height: 2vw;
     position: relative;
     font-size: medium;
+    }
+#loginform{
+    display: none;
     }
 .loginform_input{
     width: 150px;
@@ -146,11 +150,11 @@ form input{
         rgba(243, 219, 184, 0.603) 20%, 
         rgba(247, 168, 50, 0.664), 
         rgba(238, 168, 76, 0.856)) ; 
-    border-radius: 25px;
+    border-radius: 5vw;
     border-color:  rgb(173, 81, 45);
     border-width: 3px;
-    width: 100px;
-    height: 50px;
+    width: 5vw;
+    height: 3vw;
     }
 .select:active{background: linear-gradient(0deg,
     rgba(255, 240, 190, 0.452) 1%,
@@ -164,11 +168,11 @@ form input{
     color: rgb(90, 34, 12);
     font-weight: bold;
     
-    border-radius: 25px;
+    border-radius: 5vw;
     border-color: rgb(173, 81, 45);
     border-width: 3px;
-    width: 300px;
-    height: 50px;
+    width: 20vw;
+    height: 3vw;
     background: linear-gradient(
         rgba(255, 240, 190, 0.452) 1%,
         rgba(243, 219, 184, 0.603) 20%, 
@@ -221,9 +225,13 @@ ul{
     display: none; 
     }
 footer{ 
+    display: none;
+    font-size: calc(10px + 0.5vw);
     position: absolute;
     font-style:inherit;
     top: 850px;
-    left: 800px;
+    left: 35%;
+    left: 35%;
+    width: 30%;
     white-space: pre;
     }
