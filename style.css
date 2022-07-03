@@ -4,7 +4,7 @@ body {
     url(https://phonoteka.org/uploads/posts/2021-04/1618458257_40-phonoteka_org-p-fon-dlya-lendinga-40.jpg); 
     background-attachment: fixed;
     font-family: arila, sans-serif ;/*Шрифт*/ 
-    font-size: 1.5em;/*Размер шрифта*/
+    font-size: 1vw;/*Размер шрифта*/
     color: rgb(58, 2, 2);/*Цвет текста*/
     }
 header{
@@ -75,7 +75,8 @@ input{
     box-shadow: inset 1px 3px 3px gray;
     text-align: center;
     position:relative;
-    font-size:x-large;
+    font-size:1.2vw;
+    font-weight: bold;
     color: rgb(90, 34, 12);
     font-weight: bold;
     background-color: rgb(253, 247, 244);
@@ -92,7 +93,7 @@ form input{
     width: 11vw;
     height: 2vw;
     position: relative;
-    font-size: medium;
+    font-size: 1vw;
     }
 #loginform{
     display: none;
@@ -125,13 +126,13 @@ form input{
 #search_btn{
     box-shadow: none;
     text-shadow: 1px 3px 3px gray;
-    left:-200px;
-    top: 4px;
-    font-size: 31px;
+    left:-11.5vw;
+    top: 0.19vw;
+    font-size: 2vw;
     background-color: transparent;/*Прозрачный фон для кнопки*/
     border: none;
-    width: 40px;
-    height: 50px;
+    width: 3vw;
+    height: 3vw;
     border-radius: 17.5px;
     }
 #search_btn:active {
@@ -142,7 +143,7 @@ form input{
     text-align: center;
     position:relative;
     left:0px;
-    font-size:xx-large;
+    font-size: 2vw;
     color: rgb(90, 34, 12);
     font-weight: bold;
     background: linear-gradient(
@@ -164,7 +165,7 @@ form input{
 .btn{
     position: relative;
     left:-20px;
-    font-size:large;
+    font-size:1.5vw;
     color: rgb(90, 34, 12);
     font-weight: bold;
     

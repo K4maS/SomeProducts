@@ -7,8 +7,6 @@ body{
     }
 nav{
     position: fixed;
-    font-size: calc(10px + 1vw);
-    color:black;
     top:0px;
     left: 0px;
     width: 100%;
@@ -19,13 +17,29 @@ nav{
     box-shadow: 1px 1px 5px rgb(0, 0, 0);
     text-align: center;
     z-index: 3;
+    display: flex;
+    justify-content: space-around;
+    min-width: 950px
     }
 nav a:link{
     color:black;
     position: relative;
     top: 25%;
-    text-decoration: none;
+    text-decoration:none;
     text-transform: uppercase;
+    font-weight: bold;
+    font-size: calc(10px + 0.7vw);
+    }
+nav a:hover{
+    color: rgb(71, 71, 71);
+    }
+nav a:active{
+    color: rgb(104, 104, 104);
+    transform: scale(0.97,0.97);
+    }
+nav a:default{
+    color:black;
+
     }
 article{
     /*box-shadow: 1px 1px 5px rgb(0, 0, 0);*/
@@ -40,18 +54,35 @@ article{
     z-index: 1;
     margin-left: auto;
     margin-right: auto;
+    min-width: 950px
     }
 h1{
-    text-align: center;
     font-size: xx-large;
 }
 #ava {
     border-radius: 50% ;
-    position: relative;
-    left: 0%;
-top: -6.5vw;
+    position: absolute;
+    left: 44%;
+    top: -6.5vw;
     width: 12%;
     z-index: 2;
     border: solid 3px white;
     box-shadow: 1px 1px 5px rgb(0, 0, 0);
+    min-width: 134px;
+    
     }
+div{
+    position: relative;
+    left: 4%;
+    width: 100px;
+    height: 100px;
+    background: black;
+    
+    }
+div:hover{
+    transform: rotate(45deg);
+    transform-origin: 73% 53%;
+    }
+div:active{
+    transform: translate(1000px, 104px) skew(30deg);
+}
