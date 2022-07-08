@@ -4,6 +4,7 @@ body{
     background-attachment: fixed;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
+   
     }
 nav{
     position: fixed;
@@ -21,7 +22,8 @@ nav{
     justify-content: space-around;
     min-width: 950px
     }
-nav a:link{
+
+nav a{
     color:black;
     position: relative;
     top: 25%;
@@ -37,15 +39,12 @@ nav a:active{
     color: rgb(104, 104, 104);
     transform: scale(0.97,0.97);
     }
-nav a:default{
-    color:black;
 
-    }
 article{
     /*box-shadow: 1px 1px 5px rgb(0, 0, 0);*/
     position: absolute;
-    width: 100%;
-    min-height: 1000px;
+    width: 50%;
+    min-height: 600px;
     height: 10000px;
     background: rgb(240, 240, 240);
     top: 60%;
@@ -54,11 +53,28 @@ article{
     z-index: 1;
     margin-left: auto;
     margin-right: auto;
-    min-width: 950px
+    min-width:  600px;
+    padding: 25%;
+    padding-top: 150px;
+    font-size: larger;
     }
 h1{
     font-size: xx-large;
 }
+.list{
+    padding-top: 10%;
+   
+    }
+.list ul{
+    text-align:left ;
+    list-style-position: outside;
+    list-style-image: url(list_image_mint20.png);
+    }
+#listinlist {
+    list-style-type: none;
+    list-style-image: none;
+    }
+
 #ava {
     border-radius: 50% ;
     position: absolute;
@@ -71,18 +87,33 @@ h1{
     min-width: 134px;
     
     }
-div{
-    position: relative;
-    left: 4%;
-    width: 100px;
-    height: 100px;
-    background: black;
+#slider {
+    padding-top: 10%;
+    }
+#slider button{
+    position:relative;
+    height: 3vw;
+    width: 3vw;
+    border-radius: 2vw;
+    top:17vw;
+    border: none;
+    background-image: url(https://knvstels.ru/bitrix/components/artixgroup/elements.sort/templates/.default/images/arrow.svg);
+    background-color: rgb(207, 207, 207);
+    }
+#slider button{}
+#back_btn{
+    position:absolute ;
+    right: 45%;
+    top: 13vw;
     
     }
-div:hover{
-    transform: rotate(45deg);
-    transform-origin: 73% 53%;
+#forward_btn{
+    position:absolute ;
+    left: 45%;
+    transform: rotate(180deg);
     }
-div:active{
-    transform: translate(1000px, 104px) skew(30deg);
-}
+#img{
+    position:relative;
+    width: 90%;
+    aspect-ratio: 1.5 / 1;
+    }

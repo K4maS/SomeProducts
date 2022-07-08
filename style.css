@@ -1,10 +1,11 @@
 body { 
     overflow:auto;
+    background-size: cover;
     background: 
     url(https://phonoteka.org/uploads/posts/2021-04/1618458257_40-phonoteka_org-p-fon-dlya-lendinga-40.jpg); 
     background-attachment: fixed;
     font-family: arila, sans-serif ;/*Шрифт*/ 
-    font-size: 1vw;/*Размер шрифта*/
+    font-size: calc(10px + 1vw);/*Размер шрифта*/
     color: rgb(58, 2, 2);/*Цвет текста*/
     }
 header{
@@ -75,7 +76,7 @@ input{
     box-shadow: inset 1px 3px 3px gray;
     text-align: center;
     position:relative;
-    font-size:1.2vw;
+    font-size:calc(10px + 1.2vw);
     font-weight: bold;
     color: rgb(90, 34, 12);
     font-weight: bold;
@@ -85,6 +86,8 @@ input{
     border-width: 2px;
     width: 20vw;
     height: 2vw;
+    min-width: 200px;
+    min-height: 30px;
     }
 input:active{
     border-color: rgb(233, 110, 62);
@@ -93,7 +96,9 @@ form input{
     width: 11vw;
     height: 2vw;
     position: relative;
-    font-size: 1vw;
+    font-size: calc(10px + 1vw);
+    min-width: 120px;
+    min-height: 20px;
     }
 #loginform{
     display: none;
@@ -128,22 +133,24 @@ form input{
     text-shadow: 1px 3px 3px gray;
     left:-11.5vw;
     top: 0.19vw;
-    font-size: 2vw;
+    font-size: calc(10px + 2vw);
     background-color: transparent;/*Прозрачный фон для кнопки*/
     border: none;
     width: 3vw;
     height: 3vw;
     border-radius: 17.5px;
+    min-width: 20px;
+    min-height: 20px;
     }
 #search_btn:active {
-    font-size: 29px;
+    font-size: calc(10px + 1.9vw);
     text-shadow: 0px 2px 2px gray;
     }
 .select{
     text-align: center;
     position:relative;
     left:0px;
-    font-size: 2vw;
+    font-size: calc(10px + 2vw);
     color: rgb(90, 34, 12);
     font-weight: bold;
     background: linear-gradient(
@@ -156,6 +163,8 @@ form input{
     border-width: 3px;
     width: 5vw;
     height: 3vw;
+    min-height: 30px;
+    min-width: 40px;
     }
 .select:active{background: linear-gradient(0deg,
     rgba(255, 240, 190, 0.452) 1%,
@@ -165,7 +174,7 @@ form input{
 .btn{
     position: relative;
     left:-20px;
-    font-size:1.5vw;
+    font-size:calc(10px + 1.5vw);
     color: rgb(90, 34, 12);
     font-weight: bold;
     
@@ -174,6 +183,8 @@ form input{
     border-width: 3px;
     width: 20vw;
     height: 3vw;
+    min-width: 200px;
+    min-height: 30px;
     background: linear-gradient(
         rgba(255, 240, 190, 0.452) 1%,
         rgba(243, 219, 184, 0.603) 20%, 
@@ -190,13 +201,14 @@ form input{
     }
 form{ 
     
-    font-size: small;
+    font-size: calc(10px + 0.4vw);
     position: absolute; 
     left: 1720px;
     top: 10px;
     }
 #search {position: absolute; 
     left: 1%;
+    display: none;
     }
 .top{
     text-align: center;
