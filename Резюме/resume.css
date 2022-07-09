@@ -89,30 +89,50 @@ h1{
     }
 #slider {
     padding-top: 10%;
-    }
-#slider button{
     position:relative;
+ 
+    }
+#slider .slide_btn{
+    position:absolute;
     height: 3vw;
     width: 3vw;
-    border-radius: 2vw;
-    top:17vw;
+    min-width: 36px;
+    min-height: 36px;
+    border-radius: 5vw;
+    top:52%;
     border: none;
     background-image: url(https://knvstels.ru/bitrix/components/artixgroup/elements.sort/templates/.default/images/arrow.svg);
     background-color: rgb(207, 207, 207);
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: 40% 50%;
     }
-#slider button{}
+
 #back_btn{
-    position:absolute ;
-    right: 45%;
-    top: 13vw;
+    position:relative ;
+    right: 98%;
     
     }
 #forward_btn{
-    position:absolute ;
-    left: 45%;
+    position:relative ;
+    left: 98%;
     transform: rotate(180deg);
     }
+#dot button{
+    position:absolute;
+    height: 1vw;
+    width: 1vw;
+    min-width: 10px;
+    min-height: 10px;
+    border-radius: 5vw;
+    top:105%;
+    right: 10%;
+    border: none;
+    background-image: none;
+    background-color: rgb(207, 207, 207);
+    }
 #img{
+    /*visibility:hidden;*/
     position:relative;
     width: 90%;
     aspect-ratio: 1.5 / 1;
