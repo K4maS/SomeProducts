@@ -4,7 +4,7 @@ body {
     background: 
     url(https://phonoteka.org/uploads/posts/2021-04/1618458257_40-phonoteka_org-p-fon-dlya-lendinga-40.jpg); 
     background-attachment: fixed;
-    font-family: arila, sans-serif ;/*Шрифт*/ 
+    font-family: arial, sans-serif ;/*Шрифт*/ 
     font-size: calc(10px + 1vw);/*Размер шрифта*/
     color: rgb(58, 2, 2);/*Цвет текста*/
     }
