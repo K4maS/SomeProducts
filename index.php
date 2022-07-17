@@ -2,7 +2,14 @@
 require_once 'config\database.php';
 $links = mysqli_query($mysql, "SELECT * FROM `links`");
 $links = mysqli_fetch_all($links);
-print_r($links);
+
+$lastlink = mysqli_query($mysql, "SELECT * FROM `links` WHERE `id` = (SELECT max(id) FROM `links`) ");
+$lastlink = mysqli_fetch_row($lastlink);
+
+$link_id = $_GET['id'];
+$added_link = mysqli_query($mysql, "SELECT * FROM `links` WHERE `id` = '$link_id'");
+$added_link = mysqli_fetch_row($added_link);
+print_r($added_link);
 ?>
 <!DOCTYPE html>
     <head>
@@ -17,17 +24,18 @@ print_r($links);
             <header><!--HTML5 элемент header (остановился здесь)-->
                
                 <table>
-                     <?php foreach($links as $link) {?>
+                   
                     <tr>
                         <th>Основная ссылка</th>
                         <th>Укороченная ссылка</th>
                     </tr>
-                
+                  <?php foreach($links as $link) {?>
                     <tr>
                         <td><?=  $link[1] ?></td>
                         <td><?=  $link[2] ?></td>
                     </tr>
                     <?php } ?>
+                    
                 </table>
                 
                     <form action="links/link.php" method="post">
@@ -37,15 +45,10 @@ print_r($links);
                     <p>
                         <label for="long_link_value" > Ваша ссылка: </label>
                     <br/>        
-                        <input class="input" id='long_link_value' type="link" placeholder="https://www.website.com/long-link/so-long124352465">
-                    </p>
+                        <input class="input" name='main_link' id='long_link_value' type="link" value="<?= $added_link[1] ?>" placeholder="https://www.website.com/long-link/so-long124352465">
+                    <p><a target='_blank' href='<?= 'http://someproducts/links/'.$added_link[2]; ?>'><?= 'http://someproducts/links/'.$added_link[2]; ?></a> </p>
                     <p>
-                        <label for="short_link_value" > Укороченная ссылка: </label>
-                    <br/>        
-                        <input class="input" id='short_link_value' type="link" placeholder="https://www.short.com/link">
-                    </p>
-                    <p>
-                        <button type="submit" class="btn" id="link_btn" onclick="alert('Этот раздел еще не работает')">Укороить ссылку</button>
+                        <button type="submit" class="btn" id="link_btn" >Укороить ссылку</button>
                     </p>
             
         <script src="script.js"></script>
