@@ -7,6 +7,8 @@ $lastlink = mysqli_query($mysql, "SELECT * FROM `links` WHERE `id` = (SELECT max
 $lastlink = mysqli_fetch_row($lastlink);
 
 $link_id = $_GET['id'];
+
+
 $added_link = mysqli_query($mysql, "SELECT * FROM `links` WHERE `id` = '$link_id'");
 $added_link = mysqli_fetch_row($added_link);
 print_r($added_link);
