@@ -1,34 +1,3 @@
-//Смена блоков в окне
-document.getElementById('calc_page_btn').onclick = function(){
-    document.getElementById('main_page').style.display="none";
-    document.getElementById('calc_page').style.display="block";
-    document.getElementById('rand_page').style.display="none";
-    document.getElementById('link_page').style.display="none";
-
-    }
-document.getElementById('main_page_btn').onclick = function(){
-    document.getElementById('main_page').style.display="block";
-    document.getElementById('calc_page').style.display="none";
-    document.getElementById('rand_page').style.display="none";
-    document.getElementById('link_page').style.display="none";
-
-    }
-document.getElementById('rand_page_btn').onclick = function(){
-    document.getElementById('main_page').style.display="none";
-    document.getElementById('calc_page').style.display="none";
-    document.getElementById('rand_page').style.display="block";
-    document.getElementById('link_page').style.display="none";
-
-    }
-document.getElementById('link_page_btn').onclick = function(){
-    document.getElementById('main_page').style.display="none";
-    document.getElementById('calc_page').style.display="none";
-    document.getElementById('rand_page').style.display="none";
-    document.getElementById('link_page').style.display="block";
-   
-
-    }
-
 
  //Калькулятор   
 calc_btn.onclick = function click()

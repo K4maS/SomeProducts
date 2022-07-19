@@ -1,0 +1,189 @@
+body { 
+    overflow:auto;
+    background-size: cover;
+    background: 
+    url(https://phonoteka.org/uploads/posts/2021-04/1618458257_40-phonoteka_org-p-fon-dlya-lendinga-40.jpg); 
+    background-attachment: fixed;
+    font-family: arial, sans-serif ;/*Шрифт*/ 
+    font-size: calc(10px + 1vw);/*Размер шрифта*/
+    color: rgb(58, 2, 2);/*Цвет текста*/
+    }
+header{
+    background-color: Cornsilk;
+    }
+a{
+    color: rgb(138, 52, 17);
+}
+nav {
+    box-shadow: 1px 3px 3px 1px gray ;
+    border-radius: 10vw;
+    border: none /*5px outset rgb(226, 185, 185)*/;
+    min-height: 85px;
+    min-width: 640px;
+    text-transform: uppercase;
+    text-shadow: 1px 3px 3px gray;
+    text-align: center;
+    font-size: calc(10px + 1vw);
+    font-weight: bold;/*Толщина шрифта*/
+    font-variant: small-caps; /* Тут маленькие заглавные буквы*/
+    position: absolute; 
+    top: 150px; /*Позиционтрование сверху*/
+    left: 10%; /*Позицианирование слева*/
+    right: 10%; /*Позицианирование справа*/
+    background: linear-gradient(
+                rgba(255, 240, 190, 0.452) 1%,
+                rgba(243, 219, 184, 0.603) 20%, 
+                rgba(247, 168, 50, 0.664), 
+                rgba(238, 168, 76, 0.856)); 
+    padding-left: 100px;
+    padding-right: 100px;
+    z-index: 4;
+    
+    }
+nav a:link {
+    color: rgb(138, 52, 17);
+    text-decoration: none;
+    cursor: default;
+    position: relative;
+    top:29px
+    }
+nav a:hover {
+    color: rgb(211, 98, 54);
+    }
+nav a:active {
+    color: rgb(173, 81, 45);
+    position: relative;
+    font-size: 100%;
+    text-shadow: 0px 2px 2px gray;
+    }
+article { 
+    font-size: calc(10px + 1vw);
+    box-shadow: 1px 3px 3px 0px gray;
+    border-radius:0 0 50px 50px;
+    min-width: 600px;
+    left:17%;
+    right: 17%;
+    z-index: 3;
+    position: absolute; 
+    top: 240px;
+    background: linear-gradient(
+        rgba(247, 244, 230, 0.301)3%,
+        rgba(243, 231, 176, 0.589), 
+        rgba(238, 214, 109, 0.589)); 
+    padding: 20px 60px 60px 60px; /*Сверху, справа, снизу, слева*/
+    }
+input{
+    box-shadow: inset 1px 3px 3px gray;
+    text-align: center;
+    position:relative;
+    font-size:calc(10px + 1.2vw);
+    font-weight: bold;
+    color: rgb(90, 34, 12);
+    font-weight: bold;
+    background-color: rgb(253, 247, 244);
+    border-radius: 5vw;
+    border-color: rgb(173, 81, 45);
+    border-width: 2px;
+    width: 20vw;
+    height: 2vw;
+    min-width: 200px;
+    min-height: 30px;
+    }
+input:active{
+    border-color: rgb(233, 110, 62);
+    }
+
+
+.select{
+    text-align: center;
+    position:relative;
+    left:0px;
+    font-size: calc(10px + 2vw);
+    color: rgb(90, 34, 12);
+    font-weight: bold;
+    background: linear-gradient(
+        rgba(255, 240, 190, 0.452) 1%,
+        rgba(243, 219, 184, 0.603) 20%, 
+        rgba(247, 168, 50, 0.664), 
+        rgba(238, 168, 76, 0.856)) ; 
+    border-radius: 5vw;
+    border-color:  rgb(173, 81, 45);
+    border-width: 3px;
+    width: 5vw;
+    height: 3vw;
+    min-height: 30px;
+    min-width: 40px;
+    }
+.select:active{background: linear-gradient(0deg,
+    rgba(255, 240, 190, 0.452) 1%,
+    rgba(243, 219, 184, 0.603) 20%, 
+    rgba(247, 168, 50, 0.664), 
+    rgba(238, 168, 76, 0.856)) ; }
+.btn{
+    position: relative;
+    left:-20px;
+    font-size:calc(10px + 1.5vw);
+    color: rgb(90, 34, 12);
+    font-weight: bold;
+    
+    border-radius: 5vw;
+    border-color: rgb(173, 81, 45);
+    border-width: 3px;
+    width: 20vw;
+    height: 3vw;
+    min-width: 200px;
+    min-height: 30px;
+    background: linear-gradient(
+        rgba(255, 240, 190, 0.452) 1%,
+        rgba(243, 219, 184, 0.603) 20%, 
+        rgba(247, 168, 50, 0.664), 
+        rgba(238, 168, 76, 0.856)) ; 
+    }
+.btn:active{
+        background: linear-gradient(
+        360deg,
+        rgba(255, 240, 190, 0.452) 1%,
+        rgba(243, 219, 184, 0.603) 20%, 
+        rgba(247, 168, 50, 0.664), 
+        rgba(238, 168, 76, 0.856)); 
+    }
+
+
+.top{
+    text-align: center;
+    text-transform: uppercase;
+    }  
+#main_page{
+    position: absolute;
+    text-align:justify;/*Выравнивание*/
+    
+    }
+#calc_page{
+    display: none; /*Блок скрыт*/
+    }
+p{
+    text-indent: 1cm;
+    word-wrap: break-word;
+    }
+ul{
+        text-indent: 1cm;
+        list-style-position: inside;
+    }
+#rand_page {
+    display: none; /*Блок скрыт*/
+    }
+#link_page{
+    display: block;
+    display: none; 
+    }
+footer{ 
+    display: none;
+    font-size: calc(10px + 0.5vw);
+    position: absolute;
+    font-style:inherit;
+    top: 850px;
+    left: 35%;
+    left: 35%;
+    width: 30%;
+    white-space: pre;
+    }

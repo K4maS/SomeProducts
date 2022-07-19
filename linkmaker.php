@@ -1,5 +1,10 @@
 <?php
+session_start();
 require_once 'config\database.php';
+$added_link = mysqli_query($mysql, "SELECT * FROM `links` WHERE `id` = (SELECT max(id) FROM `links`)");
+$added_link = mysqli_fetch_row($added_link);
+$_SESSION['last_added_link']= $added_link[1];
+
 
 $lastlink = mysqli_query($mysql, "SELECT * FROM `links` WHERE `id` = (SELECT max(id) FROM `links`) ");
 $lastlink = mysqli_fetch_row($lastlink);
@@ -7,10 +12,6 @@ $lastlink = mysqli_fetch_row($lastlink);
 $link_id = $_GET['id'];
 
 
-$added_link = mysqli_query($mysql, "SELECT * FROM `links` WHERE `id` = (SELECT max(id) FROM `links`)");
-$added_link = mysqli_fetch_row($added_link);
-
-$url = ((!empty($_SERVER['HTTPS']))? 'https': 'http'). '://' . $_SERVER['HTTP_HOST'];
 
 ?>
 <!DOCTYPE html>
@@ -20,7 +21,7 @@ $url = ((!empty($_SERVER['HTTPS']))? 'https': 'http'). '://' . $_SERVER['HTTP_HO
         <meta charset="utf-8"> <!--Да, он по умолчанию, но все равно указал-->
         <link  rel="shortcut icon" href="https://www.xn--h1aaecjlfhn1d.xn--p1ai/system/ckeditor_assets/pictures/180269/content_45520334_xxl.png">
         <!--стиль-->
-        <link rel="stylesheet" type="text/css" href="style/style2.css"/>
+        <link rel="stylesheet" type="text/css" href="style/style.css"/>
     </head >
     <body>
             <header><!--HTML5 элемент header (остановился здесь)-->
@@ -28,8 +29,12 @@ $url = ((!empty($_SERVER['HTTPS']))? 'https': 'http'). '://' . $_SERVER['HTTP_HO
 
             </header>
             <nav>
-             <a href='index.php' id="main_page_btn">на главнаую</a> 
-             <a href='links_list.php' id="main_page_btn">Список укороченных ссылок</a> 
+                <a href='index.php' id="main_page_btn">главная</a> 
+                <a href="calculator.html" id="calc_page_btn">калькулятор</a>  
+                <a href='randomiser.html' id="rand_page_btn">рандомайзер</a> 
+                <a href='linkmaker.php'id='link_page_btn'">укоротитель ссылок</a> 
+                <a target="_blank" href='resume\resume.html'>мое резюме</a> 
+                <a href='links_list.php' id="main_page_btn">Список укороченных ссылок</a> 
                         
                         
                 
@@ -42,13 +47,13 @@ $url = ((!empty($_SERVER['HTTPS']))? 'https': 'http'). '://' . $_SERVER['HTTP_HO
                     <p>
                         <label for="long_link_value" > Ваша ссылка: </label>
                     <br/>        
-                    <input class="input" id='long_link_value' name='main_link'  type="url" value="<?= $added_link[1] ?>" placeholder="https://www.website.com/long-link/so-long124352465">
-                    </p>
+                    <input class="input" id='long_link_value' name='main_link'  type="url" value="<?= $_SESSION['last_added_link'];?>" placeholder="https://www.website.com/long-link/so-long124352465">
+                    </p> 
                     <p>
                         <label for="long_link_value" > Укороченная ссылка: </label>
                     </p>
                     <p>
-                        <a target='_blank' href='<?= $url.$added_link[2]; ?>'><?= $url.$added_link[2]; ?></a> 
+                        <a target='_blank' href='<?= $added_link[2]; ?>'><?= $added_link[2]; ?></a> 
                     </p>
                     <p>
                         <button type="submit" class="btn" id="link_btn">Укороить ссылку</button>
