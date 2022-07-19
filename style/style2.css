@@ -1,0 +1,26 @@
+body{
+    align-content: center;
+    font-size: x-large;
+    }
+article{background-color: aquamarine;
+text-align: center;}
+nav{
+    text-align: center;
+    background-color: blueviolet;
+    padding: 10px;
+    }
+    
+nav a {
+    color: rgb(252, 248, 8);
+}
+table {
+    width: 800px;
+    border-collapse:inherit;
+    
+    font-size: small;
+    border: black solid 2px;
+ }
+ tr, td{
+    background-color: rgb(189, 255, 255);
+    border: black solid 1px;
+ }

@@ -20,7 +20,7 @@ $url = ((!empty($_SERVER['HTTPS']))? 'https': 'http'). '://' . $_SERVER['HTTP_HO
         <meta charset="utf-8"> <!--Да, он по умолчанию, но все равно указал-->
         <link  rel="shortcut icon" href="https://www.xn--h1aaecjlfhn1d.xn--p1ai/system/ckeditor_assets/pictures/180269/content_45520334_xxl.png">
         <!--стиль-->
-        <link rel="stylesheet" type="text/css" href="../style/style.css"/>
+        <link rel="stylesheet" type="text/css" href="style/style2.css"/>
     </head >
     <body>
             <header><!--HTML5 элемент header (остановился здесь)-->
@@ -59,8 +59,8 @@ $url = ((!empty($_SERVER['HTTPS']))? 'https': 'http'). '://' . $_SERVER['HTTP_HO
                 <!--Второстепенный сопутствующий контент-->
             </aside>
             <footer>
-                <!--Подвал-->
-                <h3>All rights reserved 2022</h3>
+                <!--<h3>All rights reserved 2022</h3>Подвал-->
+                
             </footer>
 
     </body>
