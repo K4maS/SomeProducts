@@ -5,9 +5,6 @@ $added_link = mysqli_query($mysql, "SELECT * FROM `links` WHERE `id` = (SELECT m
 $added_link = mysqli_fetch_row($added_link);
 $_SESSION['last_added_link']= $added_link[1];
 $_SESSION['last_shorted_link']= $added_link[2];
-get_coo
-$lastlink = mysqli_query($mysql, "SELECT * FROM `links` WHERE `id` = (SELECT max(id) FROM `links`) ");
-$lastlink = mysqli_fetch_row($lastlink);
 
 $link_id = $_GET['id'];
 
@@ -53,7 +50,7 @@ $link_id = $_GET['id'];
                         <label for="long_link_value" > Укороченная ссылка: </label>
                     </p>
                     <p>
-                        <a target='_blank' href='<?= $_SESSION['last_shorted_link']; ?>'><?= $_SESSION['last_shorted_link']; ?></a> 
+                        <a target='_blank' href='<?= $_SESSION['last_shorted_link']; ?>'><?= $added_link[2]; ?></a> 
                     </p>
                     <p>
                         <button type="submit" class="btn" id="link_btn">Укороить ссылку</button>

@@ -3,9 +3,6 @@ require_once 'config\database.php';
 $links = mysqli_query($mysql, "SELECT * FROM `links`");
 $links = mysqli_fetch_all($links);
 
-$lastlink = mysqli_query($mysql, "SELECT * FROM `links` WHERE `id` = (SELECT max(id) FROM `links`) ");
-$lastlink = mysqli_fetch_row($lastlink);
-
 
 $url = ((!empty($_SERVER['HTTPS']))? 'https': 'http'). '://' . $_SERVER['HTTP_HOST'];
 
@@ -33,15 +30,17 @@ $url = ((!empty($_SERVER['HTTPS']))? 'https': 'http'). '://' . $_SERVER['HTTP_HO
                 <table>
                    
                     <tr>
+                        <th>id</th>
                         <th>Основная ссылка</th>
                         <th>Укороченная ссылка</th>
                         <th>Удаление</th>
                     </tr>
                   <?php foreach($links as $link) {?>
                     <tr>
+                        <td><?=  $link[0] ?></td>
                         <td><?=  $link[1] ?></td>
                         <td><?=  $link[2] ?></td>
-                        <td><a href='chnges <?=  $link[0] ?></td>
+                        <td><a href='changes\delete.php?id=<?=$link[0]?>'>Удалить</td>
                     </tr>
                     <?php } ?>
                     

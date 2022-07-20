@@ -15,6 +15,4 @@ chdir($second_link);
 file_put_contents("index.php" , "<?php header('Location: $main_link' );?>", FILE_APPEND);
 header('Location: ../');
 header('Location: ../linkmaker.php?id='.$second_link );
-
-
 ?>
