@@ -14,13 +14,12 @@
 
             </header>
             <nav>  
-                        <a href='index.php' id="main_page_btn">главная</a> 
-                        <a href="calculator.html" id="calc_page_btn">калькулятор</a>  
-                        <a href='#' id="rand_page_btn">рандомайзер</a> 
-                        <a href='linkmaker.php'id='link_page_btn'">укоротитель ссылок</a> 
-                        <a target="_blank" href='resume\resume.html'>мое резюме</a> 
-                 
-                
+                <ul> 
+                    <li><a href='index.php'  >главная</a></li>
+                    <li><a href="calculator.html"  >калькулятор</a></li>
+                    <li><a href='randomiser.html' id='choose'>рандомайзер</a></li>
+                    <li><a href='linkmaker.php' >укоротитель ссылок</a> </li>
+                </ul>
             </nav>
             <article id='rand_page' ><!--align="center"Randomaser page-->
                 <section>
@@ -30,17 +29,17 @@
                     <p>
                         <label for="rand_value" > Минимальное число: </label>
                     <br/>        
-                        <input class="input" id='rand_value_start' type="number" value="0" min="0" max="999999999">
+                        <input class="input" id='rand_value_start' type="number" value="0" min="0" max="999999999"/>
                     </p>
                     <p>
                         <label for="rand_value" > Максимальное число: </label>
                     <br/>        
-                        <input class="input" id='rand_value_end' type="number" value="6" min="0" max="999999999">
+                        <input class="input" id='rand_value_end' type="number" value="6" min="0" max="999999999"/>
                     </p>
                     <p>
                         <button class="btn" id="rand_btn">Мне повезет</button>
                     </p>
-                    <h3 ><!--align="center"--><div class="score" id="pool_rand">Выпало:</div></h3>
+                    <h3><!--align="center"--><div class="score" id="pool_rand">Выпало:</div></h3>
                 </section>
             </article>
             <aside>
@@ -50,7 +49,7 @@
                 <!--Подвал <h3>All rights reserved 2022</h3>-->
                
             </footer>
-        <script src="script/script.js"></script>
+        <script src="script/rand.js"></script>
 
 
     </body>

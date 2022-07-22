@@ -2,28 +2,104 @@ body{
     align-content: center;
     font-size: x-large;
     font-family: arial, sans-serif;/*Шрифт*/ 
+    background: url(octogonsbg_long.jpg);
+    background-size: cover;
     }
 article{
-    background-color: aquamarine;
+    background: linear-gradient(rgba(127, 255, 212, 0.582)72%, rgba(214, 245, 235, 0.575), rgba(255, 255, 255, 0.062));
     text-align: center;
+    border-radius: 2px;
+    padding-top: 100px;
+    padding-bottom: 200px;
+    list-style-position: inside;
     }
+    list{
+        text-align: right;
+        }
 nav{
     text-align: center;
-    background-color: blueviolet;
-    padding: 10px;
+    border-radius: 2px;
+    background: linear-gradient(rgba(137, 43, 226, 0.76), rgba(72, 14, 126, 0.76));
+    padding: 5px;
+
     }
     
 nav a {
-    color: rgb(252, 248, 8);
+    color: rgb(255, 255, 255);
+   text-transform: uppercase;
+   text-decoration: none;
+   font-weight: bold;
     }
+nav a:hover {
+    color: rgb(211, 209, 209);
+    text-decoration: underline;
+        }
+#choose{ 
+    color: rgb(211, 209, 209);
+    text-decoration: underline;  
+    } 
+nav ul {
+        margin: 0; /* Обнуляем значение отступов */
+        padding: 4px; /* Значение полей */
+       }
+nav ul li {
+        display: inline; /* Отображать как строчный элемент */
+        margin-right: 10px; /* Отступ слева */
+       
+        padding: 3px; /* Поля вокруг текста */
+       }
 table {
-    width: 800px;
+    width: 100%;
     border-collapse:inherit;
-    
-    font-size: small;
+    margin: auto;
+    font-size: medium;
     border: black solid 2px;
+    white-space: pre-line;
  }
  tr, td{
-    background-color: rgb(189, 255, 255);
+    background-color: rgba(189, 255, 255, 0.733);
     border: black solid 1px;
+ }
+ input{
+    width: 400px;
+    height: 40px;
+    font-size: x-large;
+    font-weight: bold;
+    border-radius: 10px;
+    background-color: rgba(240, 248, 255, 0.623);
+ }
+ button{
+    width: 400px;
+    height: 60px;
+    font-size: x-large;
+    color: rgb(252, 252, 252);
+    border-radius: 10px;
+    font-weight: bold;
+    background: linear-gradient(rgba(137, 43, 226, 0.76), rgba(72, 14, 126, 0.76));
+ }
+ button:active{
+    background: 90deg linear-gradient(rgba(137, 43, 226, 0.76), rgba(72, 14, 126, 0.76));
+ }
+ @media screen and (max-width:550px) {
+    nav ul li {
+        display: list-item;/* Отображать как строчный элемент */
+        list-style: none;
+        margin-right: 5px; /* Отступ слева */
+       font-size: large;
+      
+        padding: 3px; /* Поля вокруг текста */
+       } 
+       input{
+        width: 200px;
+        height: 20px;
+        font-size: medium;
+        border-radius: 5px;
+     }
+     button{
+        width: 200px;
+        height: 30px;
+        font-size: medium;
+        border-radius: 5px;
+        
+     }
  }

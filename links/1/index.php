@@ -1,1 +1,1 @@
-<?php header('Location: https://best.aliexpress.ru/?sub=630324&af=739_630324&utm_campaign=630324&aff_platform=api-new-link-generate&utm_medium=cpa&sub1=1068989&cn=22rurf6832m06qakxrb7r4rkkj1gxdud&dp=22rurf6832m06qakxrb7r4rkkj1gxdud&aff_fcid=cf478d3d334e445896a3078763798163-1658071407347-08839-_9u0AMH&cv=3&aff_fsk=_9u0AMH&sk=_9u0AMH&aff_trace_key=cf478d3d334e445896a3078763798163-1658071407347-08839-_9u0AMH&terminal_id=64a115d71d744aca95c438197d380623&utm_source=admitad&utm_content=1068989' );?>
+<?php header('Location: ' );?><?php header('Location: ' );?>
