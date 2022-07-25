@@ -64,7 +64,7 @@ $url = ((!empty($_SERVER['HTTPS']))? 'https': 'http'). '://' . $_SERVER['HTTP_HO
                     
                         Остальные функции будут добавляться по мере готовности.
                         Планы гранди озные и будут сто раз переосмысливаться, результат покажет время.</p> 
-                        <p><a target="_blank" href='resume\resume.html'>мое резюме</a></p>
+                        <p><a target="_blank" href='..\resume\resume.html'>мое резюме</a></p>
                     <p >Спасибо за внимание!</p><!--align="center"-->
                 </section>
             </article>

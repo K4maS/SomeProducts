@@ -3,10 +3,9 @@ session_start();
 require_once 'config\database.php';
 $added_link = mysqli_query($mysql, "SELECT * FROM `links` WHERE `id` = (SELECT max(id) FROM `links`)");
 $added_link = mysqli_fetch_row($added_link);
-$_SESSION['last_added_link']= $added_link[1];
-$_SESSION['last_shorted_link']= $added_link[2];
 $link_id = $_GET['id'];
-
+$added_link = $_GET['added_link'];
+$shorted_link = $_GET['shprted_link'];
 
 
 ?>
@@ -46,7 +45,7 @@ $link_id = $_GET['id'];
                     <p>
                         <label for="long_link_value" > Ваша ссылка: </label>
                     <br/>        
-                    <input class="input" id='long_link_value' name='main_link'  type="url" value="<?= $_SESSION['last_added_link'];?>" placeholder="https://www.website.com/long-link/so-long124352465" required>
+                    <input class="input" id='long_link_value' name='main_link'  type="url" value="<?= $added_link;?>" placeholder="https://www.website.com/long-link/so-long124352465" required>
                     </p> 
                     <p>
                         <button type="submit" class="btn" id="link_btn">Укороить ссылку</button>
@@ -55,7 +54,7 @@ $link_id = $_GET['id'];
                         <label for="long_link_value" > Укороченная ссылка: </label>
                     </p>
                     <p>
-                        <a target='_blank' href='<?= $_SESSION['last_shorted_link']; ?>'><?= $added_link[2]; ?></a> 
+                        <a target='_blank' href='<?= $added_link; ?>'><?= $added_link; ?></a> 
                     </p>
                     
                 </form>

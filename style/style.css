@@ -23,6 +23,7 @@ nav{
     padding: 5px;
 
     }
+
     
 nav a {
     color: rgb(255, 255, 255);
@@ -80,6 +81,13 @@ table {
  button:active{
     background: 90deg linear-gradient(rgba(137, 43, 226, 0.76), rgba(72, 14, 126, 0.76));
  }
+ .modern_calc_page button{
+    width: 100px;
+    height: 60px;
+    }
+.modern_calc_page table{
+    width: auto;
+    }
  @media screen and (max-width:550px) {
     nav ul li {
         display: list-item;/* Отображать как строчный элемент */
@@ -100,6 +108,6 @@ table {
         height: 30px;
         font-size: medium;
         border-radius: 5px;
-        
-     }
+     }  
+    
  }
