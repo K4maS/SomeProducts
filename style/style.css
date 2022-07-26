@@ -4,6 +4,7 @@ body{
     font-family: arial, sans-serif;/*Шрифт*/ 
     background: url(octogonsbg_long.jpg);
     background-size: cover;
+    
     }
 article{
     background: linear-gradient(rgba(127, 255, 212, 0.582)72%, rgba(214, 245, 235, 0.575), rgba(255, 255, 255, 0.062));
