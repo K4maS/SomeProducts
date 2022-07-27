@@ -89,6 +89,15 @@ table {
 .modern_calc_page table{
     width: auto;
     }
+#over{
+    text-decoration: overline;
+}
+
+
+
+
+
+
  @media screen and (max-width:550px) {
     nav ul li {
         display: list-item;/* Отображать как строчный элемент */

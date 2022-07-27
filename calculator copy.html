@@ -28,6 +28,7 @@
                     <p>
                         <h3>Калькулятор</h3>
                     </p>
+                    <h3><div class="score" id="pool_calc">0</div></h3>
                     <table>
                         <tr>
                             <td colspan="4"> <input class="input" id='value_input' type="number"></td>
@@ -35,42 +36,42 @@
                         <tr>
                             <td><button >%</button></td>
                             <td><button >CE</button></td>
-                            <td><button id="clearall" style="background: gray;">C</button></td>
-                            <td><button >bs</button></td>
+                            <td><button id="clearall" style="background: gray;" onclick="clear_all()">C</button></td>
+                            <td><button >⌦</button></td>
                         </tr>
                         <tr>
                             <td><button  id="">1/x</button></td>
-                            <td><button id="" >x^2</button></td>
-                            <td><button id="" >2vx</button></td>
-                            <td><button  id="">/</button></td>
+                            <td><button id="" >x<sup><small>2</small></sup></button></td>
+                            <td><button id="" >2√<strong id="over">x</strong></button></td>
+                            <td><button  id="" id="+" style="background: rgb(194, 161, 91);" onclick="action('/')">/</button></td>
                         </tr>
                         <tr>
                             <td><button id="" style="background: gray;" onclick="add_value(7)">7</button></td>
                             <td><button id="" style="background: gray;" onclick="add_value(8)">8</button></td>
                             <td><button id="" style="background: gray;" onclick="add_value(9)">9</button></td>
-                            <td><button id="" style="background: gray;" onclick="action('*')">*</button></td>
+                            <td><button id="" style="background: rgb(194, 161, 91);" onclick="action('*')">*</button></td>
                         </tr>
                         <tr>
                             <td><button id="" style="background: gray;" onclick="add_value(4)">4</button></td>
                             <td><button id="" style="background: gray;" onclick="add_value(5)">5</button></td>
                             <td><button id="" style="background: gray;" onclick="add_value(6)">6</button></td>
-                            <td><button id="" style="background: gray;" onclick="action('-')">-</button></td>
+                            <td><button id="" style="background: rgb(194, 161, 91);" onclick="action('-')">-</button></td>
                         </tr>
                         <tr>
                             <td><button id="1" style="background: gray;" onclick="add_value(1)">1</button></td>
                             <td><button id="2" style="background: gray;" onclick="add_value(2)">2</button></td>
                             <td><button id="3" style="background: gray;" onclick="add_value(3)">3</button></td>
-                            <td><button id="+" style="background: gray;" onclick="action('+')">+</button></td>
+                            <td><button id="+" style="background: rgb(194, 161, 91);" onclick="action('+')">+</button></td>
                         </tr>
                         <tr>
                             <td><button id="+/-" style="background: gray;" onclick="posneg()">+/-</button></td>
                             <td><button id="0" style="background: gray;" onclick="add_value(0)">0</button></td>
-                            <td><button id="," style="background: rgb(190, 91, 91);" onclick="add_value(',')">,</button></td>
-                            <td><button id="=" style="background: gray;" onclick="result()">=</button></td>
+                            <td><button id="," style="background: gray;" onclick="add_dot()">.</button></td>
+                            <td><button id="=" style="background: rgb(194, 161, 91);" onclick="result()">=</button></td>
                         </tr>
                     </table>
                      
-                    <h3><div class="score" id="pool_calc">Ответ:</div></h3>
+                  
                 </section>
             </article> 
 
