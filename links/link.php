@@ -12,7 +12,7 @@ $path =$url.$path.'/'.$second_link;
 mysqli_query($mysql, "INSERT INTO `links` (`id`, `main link`, `second link`) VALUES (NULL, '$main_link', '$path')");
 mkdir("$second_link");
 chdir($second_link);
-file_put_contents("index.php" , "<?php header('Location: $main_link' );?>", FILE_APPEND);
+file_put_contents("index.html" , "<?php header('Location: $main_link' );?>", FILE_APPEND);
 header('Location: ../');
 //header('Location: ../linkmaker.php?id='.$second_link );
 header('Location: ../linkmaker.php?added_link='.$main_link.'&shprted_link='.$path  );

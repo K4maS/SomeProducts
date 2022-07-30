@@ -20,7 +20,7 @@ $url = ((!empty($_SERVER['HTTPS']))? 'https': 'http'). '://' . $_SERVER['HTTP_HO
             <header><!--HTML5 элемент header (остановился здесь)-->
             <nav>  
             <ul> 
-                    <li><a href='index.php'  >главная</a></li>
+                    <li><a href='index.html'  >главная</a></li>
                     <li><a href="calculator.html"  >калькулятор</a></li>
                     <li><a href='randomiser.html'   >рандомайзер</a></li>
                     <li><a href='linkmaker.php' >укоротитель ссылок</a> </li>

@@ -25,7 +25,7 @@ $shorted_link = $_GET['shprted_link'];
             </header>
             <nav>
             <ul> 
-                    <li><a href='index.php'  >главная</a></li>
+                    <li><a href='index.html'  >главная</a></li>
                     <li><a href="calculator.html"  >калькулятор</a></li>
                     <li><a href='randomiser.html' >рандомайзер</a></li>
                     <li><a href='linkmaker.php' id='choose' >укоротитель ссылок</a> </li>

@@ -1,21 +1,4 @@
-<?php
-require_once 'config\database.php';
-$links = mysqli_query($mysql, "SELECT * FROM `links`");
-$links = mysqli_fetch_all($links);
 
-$lastlink = mysqli_query($mysql, "SELECT * FROM `links` WHERE `id` = (SELECT max(id) FROM `links`) ");
-$lastlink = mysqli_fetch_row($lastlink);
-
-$link_id = $_GET['id'];
-
-
-$added_link = mysqli_query($mysql, "SELECT * FROM `links` WHERE `id` = (SELECT max(id) FROM `links`)");
-$added_link = mysqli_fetch_row($added_link);
-
-$url = ((!empty($_SERVER['HTTPS']))? 'https': 'http'). '://' . $_SERVER['HTTP_HOST'];
-
-
-?>
 <!DOCTYPE html>
     <head>
         
@@ -32,7 +15,7 @@ $url = ((!empty($_SERVER['HTTPS']))? 'https': 'http'). '://' . $_SERVER['HTTP_HO
             </header>
             <nav>  
                 <ul> 
-                    <li><a id='choose' href='index.php'  >главная</a></li>
+                    <li><a id='choose' href='index.html'  >главная</a></li>
                     <li><a href="calculator.html" >калькулятор</a></li>
                     <li><a href='randomiser.html'>рандомайзер</a></li>
                     <li><a href='linkmaker.php'>укоротитель ссылок</a> </li>
@@ -57,7 +40,7 @@ $url = ((!empty($_SERVER['HTTPS']))? 'https': 'http'). '://' . $_SERVER['HTTP_HO
                          от настроения автора.</p> 
                     <p>Сейчас реализовано: </p>
                         <ul> 
-                            <li>Калькулятор</li>
+                            <li>Два варината калькулятора</li>
                             <li>Рандомайзер</li>
                             <li>Укоротитель ссылок</li>
                         </ul>
@@ -65,7 +48,8 @@ $url = ((!empty($_SERVER['HTTPS']))? 'https': 'http'). '://' . $_SERVER['HTTP_HO
                         Остальные функции будут добавляться по мере готовности.
                         Планы гранди озные и будут сто раз переосмысливаться, результат покажет время.</p> 
                         <p><a target="_blank" href='..\resume\resume.html'>мое резюме</a></p>
-                    <p >Спасибо за внимание!</p><!--align="center"-->
+
+                    <p >P.S. Почему то в хостинге не работают мои php, поэтому я не могу пока запустить ускоритель ссылок. Спасибо за внимание!</p><!--align="center"-->
                 </section>
             </article>
             <aside>
