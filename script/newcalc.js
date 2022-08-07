@@ -37,7 +37,7 @@ function add_value(x){
 
 
 function posneg() {
-    //перевод чилса в позитивный или негативный видs
+    //перевод чилса в позитивный или негативный вид
     value1 = value1 * -1;
     
     monitor();
@@ -88,12 +88,17 @@ function clear_entery(){
     }
 
 function clear_last_sumbol(){
+    //отчистка крайнего введенного символа
     if (value1.length>=1){
             value1 = value1.substring(0, value1.length-1);
             let check = value1.substring(value1.length-1,value1.length+1);
             if (check == '.'){have_dot = false;}
         }
-    else{ clear_entery()};
+    else{ clear_entery()
+        value1 = value2[0];
+        value2  = [];
+        action_active = false;
+        };
     monitor();
     }
 
@@ -148,7 +153,9 @@ function result(){
                 break;
             default:  total = value1 ; 
     }
+        //вывод результата
         pool_calc.innerHTML = value2[0] + value2[1] + value1 + '='+ total ;
+        
         value2[0] = total;
         action_active = false;
         first_in = true;
@@ -179,9 +186,10 @@ switch(x){
         sumb = "2√<strong id='over'>"+value1+"</strong>";
         break;
     }
+    //вывод результата
     pool_calc.innerHTML = sumb + '='+ total ;
-        value2[0] = total;
-       
-        first_in = true;
-        have_dot = false;
+    
+    value2[0] = total;
+    first_in = true;
+    have_dot = false;
 }
